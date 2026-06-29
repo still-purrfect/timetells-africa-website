@@ -1,0 +1,73 @@
+/* ==========================================
+   PROJECTS
+========================================== */
+
+.projects{
+
+    padding:100px 0;
+
+    background:#f8f9fa;
+
+}
+
+.project-card{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 22px 45px rgba(0,0,0,.15);
+
+}
+
+.project-card img{
+
+    height:260px;
+
+    object-fit:cover;
+
+}
+
+.project-image{
+
+    height:260px;
+
+    background:#ddd;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+    color:#666;
+
+}
+
+.project-card h4{
+
+    color:#0B2C5F;
+
+    font-weight:700;
+
+}
+
+.project-card p{
+
+    color:#666;
+
+}

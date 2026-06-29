@@ -1,0 +1,432 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+Home | Timetells Africa Holdings Ltd
+{% endblock %}
+
+{% block content %}
+
+<!-- =========================================
+     HERO SECTION
+========================================= -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6" data-aos="fade-right">
+
+                <span class="badge bg-warning text-dark mb-3">
+
+                    Excellence • Innovation • Integrity
+
+                </span>
+
+                <h1>
+
+                    Building Africa's Future Through Excellence
+
+                </h1>
+
+                <p class="mt-4">
+
+                    Timetells Africa Holdings Ltd delivers innovative
+                    fabrication, logistics, hospitality and investment
+                    solutions that empower businesses and communities
+                    across Africa.
+
+                </p>
+
+                <div class="mt-5">
+
+                    <a href="{% url 'quote' %}"
+
+                        class="btn btn-primary btn-lg me-3">
+
+                        Request a Quote
+
+                    </a>
+
+                    <a href="{% url 'services' %}"
+
+                        class="btn btn-outline-primary btn-lg">
+
+                        Explore Services
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left">
+
+                <div class="hero-image-wrapper">
+
+                   <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900"
+                        alt="Timetells Africa Holdings Ltd"
+                        class="img-fluid hero-image">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-us py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">Why Choose Timetells?</h2>
+
+            <p class="text-muted">
+                We are committed to delivering excellence in every project through
+                professionalism, innovation, and customer satisfaction.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="why-card text-center">
+
+                    <div class="why-icon"><i class="bi bi-award-fill"></i></div>
+
+                    <h4>Quality</h4>
+
+                    <p>
+                        Delivering services that meet the highest industry standards.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="why-card text-center">
+
+                    <div class="why-icon"><i class="bi bi-people-fill"></i></div>
+
+                    <h4>Integrity</h4>
+
+                    <p>
+                        Building long-lasting relationships through honesty and trust.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="why-card text-center">
+
+                    <div class="why-icon"><i class="bi bi-clock-history"></i></div>
+
+                    <h4>Timely Delivery</h4>
+
+                    <p>
+                        Completing projects on schedule without compromising quality.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="why-card text-center">
+
+                    <div class="why-icon"><i class="bi bi-lightbulb-fill"></i></div>
+
+                    <h4>Innovation</h4>
+
+                    <p>
+                        Applying creative solutions to meet evolving client needs.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT SECTION ================= -->
+<section class="about py-5">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6" data-aos="fade-right">
+
+                <div class="about-image">
+
+                   <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=900"
+                        alt="About Timetells"
+                        class="img-fluid rounded shadow">
+
+                </div>
+                
+                
+
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left">
+
+                <h2 class="fw-bold mb-4">
+                    About Timetells Africa Holdings Ltd
+                </h2>
+
+                <p>
+                    Timetells Africa Holdings Ltd is a diversified company committed
+                    to delivering excellence across fabrication, logistics,
+                    hospitality, and strategic investments.
+                </p>
+
+                <p>
+                    We combine innovation, professionalism, and integrity to
+                    provide sustainable solutions that create lasting value for
+                    our clients, partners, and communities.
+                </p>
+
+                <a href="{% url 'about' %}" class="btn btn-primary mt-3">
+                    Learn More
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SERVICES SECTION ================= -->
+<section class="services py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+                Our Services
+            </h2>
+
+            <p class="text-muted">
+                Delivering quality solutions across multiple industries.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+            {% for service in services %}
+
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in">
+
+               <div class="card service-card h-100">
+
+                  <div class="card-body text-center">
+
+                       <div class="service-icon">
+
+                          <i class="bi {{ service.icon }}"></i>
+
+                  </div>
+
+                  <h4>{{ service.title }}</h4>
+
+                  <p>{{ service.description }}</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    {% endfor %}
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     FEATURED PROJECTS
+========================================= -->
+
+<section class="projects">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+                Featured Projects
+            </h2>
+
+            <p class="text-muted">
+                Some of the projects that demonstrate our commitment to quality,
+                professionalism and innovation.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+            {% for project in projects %}
+
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+
+               <div class="card project-card h-100">
+
+                   {% if project.image %}
+
+                   <img src="{{ project.image.url }}"
+                        class="card-img-top"
+                        alt="{{ project.title }}">
+
+                   {% else %}
+
+                   <div class="project-image">
+
+                      Project Image Coming Soon
+
+                   </div>
+
+                   {% endif %}
+
+                  <div class="card-body">
+
+                     <h4>{{ project.title }}</h4>
+
+                     <p>{{ project.description }}</p>
+
+                  </div>
+
+            </div>
+
+        </div>
+
+        {% endfor %}
+      
+
+        
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     COMPANY STATISTICS
+========================================= -->
+
+<section class="stats">
+
+    <div class="container">
+
+        <div class="row text-center">
+
+            <div class="col-6 col-lg-3 mb-4" data-aos="flip-left">
+
+                <div class="stat-box">
+
+                    <h2>25+</h2>
+
+                    <p>Projects Completed</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-6 col-lg-3 mb-4" data-aos="flip-left">
+
+                <div class="stat-box">
+
+                    <h2>10+</h2>
+
+                    <p>Business Partners</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-6 col-lg-3 mb-4" data-aos="flip-left">
+
+                <div class="stat-box">
+
+                    <h2>5+</h2>
+
+                    <p>Industries Served</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-6 col-lg-3 mb-4" data-aos="flip-left">
+
+                <div class="stat-box">
+
+                    <h2>100%</h2>
+
+                    <p>Client Commitment</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     CALL TO ACTION
+========================================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <h2>
+            Ready to Start Your Next Project?
+        </h2>
+
+        <p>
+
+            Partner with Timetells Africa Holdings Ltd for reliable
+            fabrication, logistics, hospitality and investment solutions
+            delivered with professionalism, innovation and excellence.
+
+        </p>
+
+        <a href="{% url 'quote' %}" class="btn btn-light btn-lg">
+
+            Request a Quote
+
+        </a>
+
+    </div>
+
+</section>
+{% endblock %}

@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: timetells-africa
+    env: python
+
+    buildCommand: "./build.sh"
+
+    startCommand: "gunicorn tmetells.wsgi:application"
+
+    envVars:
+      - key: DEBUG
+        value: False

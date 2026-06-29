@@ -1,0 +1,272 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}Timetells Africa Holdings Ltd{% endblock %}</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/stats.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/hero.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/about-page.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/services.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/services-page.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/why-us.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/back-to-top.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/projects.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/projects-page.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/whatsapp.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/cta.css' %}">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+
+            <!-- Company Logo and Name -->
+            <a class="navbar-brand" href="{% url 'home' %}">
+
+                 Timetells Africa Holdings Ltd
+
+                 <small>
+                     Where Time Grows Value
+                 </small>
+
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'services' %}">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary" href="{% url 'quote' %}">
+                            Request a Quote
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Company -->
+
+            <div class="col-lg-4 mb-4">
+
+                <h3>Timetells Africa Holdings Ltd</h3>
+
+                <p>
+
+                    Delivering excellence through fabrication,
+                    logistics, hospitality and strategic investments.
+
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="col-lg-2 col-md-6 mb-4">
+
+                <h5>Quick Links</h5>
+
+                <ul>
+
+                    <li><a href="{% url 'home' %}">Home</a></li>
+
+                    <li><a href="{% url 'about' %}">About</a></li>
+
+                    <li><a href="{% url 'services' %}">Services</a></li>
+
+                    <li><a href="{% url 'projects' %}">Projects</a></li>
+
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Services -->
+
+            <div class="col-lg-3 col-md-6 mb-4">
+
+                <h5>Services</h5>
+
+                <ul>
+
+                    <li>Fabrication</li>
+
+                    <li>Logistics</li>
+
+                    <li>Hospitality</li>
+
+                    <li>Investments</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="col-lg-3 footer-contact">
+
+                <h5>Contact Us</h5>
+
+                <p><i class="bi bi-geo-alt-fill"></i> Kisumu, Kenya</p>
+
+                <p><i class="bi bi-telephone-fill"></i> +254 792 541 080</p>
+
+                <p><i class="bi bi-envelope-fill"></i> tomowino13@gmail.com</p>
+
+                <div class="social-icons mt-4">
+
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+ 
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+ 
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+
+                 <a href="#"><i class="bi bi-twitter-x"></i></a>
+
+                </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            © 2026 Timetells Africa Holdings Ltd.
+            All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+        <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Back to Top Button
+        const button = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", function () {
+
+            if (window.scrollY > 300) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+
+        });
+
+        button.addEventListener("click", function () {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        });
+    </script>
+
+<a href="https://wa.me/254792541080"
+   class="whatsapp-float"
+   target="_blank">
+
+<i class="bi bi-whatsapp"></i>
+
+</a>
+<script src="{% static 'core/js/main.js' %}"></script>
+
+</body>
+</html>

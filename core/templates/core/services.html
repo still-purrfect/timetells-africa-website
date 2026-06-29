@@ -1,0 +1,91 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Our Services | Timetells Africa Holdings Ltd{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+
+<section class="services-hero">
+
+    <div class="container">
+
+        <h1 data-aos="fade-up">
+            Our Services
+        </h1>
+
+        <p data-aos="fade-up" data-aos-delay="200">
+            Delivering professional solutions across multiple industries.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Services -->
+
+<section class="services-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            {% for service in services %}
+
+            <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in">
+
+                <div class="service-page-card">
+
+                    <i class="bi {{ service.icon }}"></i>
+
+                    <h3>{{ service.title }}</h3>
+
+                    <p>{{ service.description }}</p>
+
+                </div>
+
+            </div>
+
+            {% empty %}
+
+            <div class="col-12">
+
+                <div class="alert alert-info text-center">
+
+                    No services have been added yet.
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Call to Action -->
+
+<section class="cta-section">
+
+    <div class="container text-center">
+
+        <h2 data-aos="fade-up">
+            Ready to Work With Us?
+        </h2>
+
+        <p data-aos="fade-up" data-aos-delay="200">
+            Contact our team today to discuss your project requirements.
+        </p>
+
+        <a href="{% url 'quote' %}" class="btn btn-warning btn-lg mt-3">
+            Request a Quote
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

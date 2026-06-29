@@ -1,0 +1,35 @@
+/* ==========================================
+   STATISTICS
+========================================== */
+
+.stats{
+
+    background:#0B2C5F;
+
+    color:white;
+
+    padding:90px 0;
+
+}
+
+.stat-box{
+
+    padding:30px;
+
+}
+
+.stat-box h2{
+
+    font-size:3rem;
+
+    color:#D4AF37;
+
+    font-weight:700;
+
+}
+
+.stat-box p{
+
+    font-size:1.05rem;
+
+}

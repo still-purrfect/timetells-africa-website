@@ -1,0 +1,39 @@
+/* ==========================================
+   SERVICES PAGE
+========================================== */
+
+.services-hero {
+    background: #0B2C5F;
+    color: #fff;
+    padding: 90px 0;
+    text-align: center;
+}
+
+.services-section {
+    padding: 80px 0;
+}
+
+.service-page-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    height: 100%;
+    transition: .3s;
+    text-align: center;
+}
+
+.service-page-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-page-card i {
+    font-size: 55px;
+    color: #D4AF37;
+    margin-bottom: 20px;
+}
+
+.service-page-card h3 {
+    color: #0B2C5F;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,87 @@
+/* ==========================================
+   WHY CHOOSE US
+========================================== */
+
+.why-us{
+
+    padding:100px 0;
+
+    background:white;
+
+}
+
+.why-us h2{
+
+    color:#0B2C5F;
+
+    font-weight:700;
+
+}
+
+.why-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    height:100%;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.why-icon{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    background:#0B2C5F;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:2.4rem;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+}
+
+.why-card:hover .why-icon{
+
+    background:#D4AF37;
+
+    color:black;
+
+}
+
+.why-card h4{
+
+    color:#0B2C5F;
+
+    margin-bottom:15px;
+
+}

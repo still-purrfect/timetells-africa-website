@@ -1,0 +1,113 @@
+/* ==========================================
+   SERVICES SECTION
+========================================== */
+
+.services{
+
+    padding:100px 0;
+
+    background:#f8f9fa;
+
+}
+
+.services h2{
+
+    color:#0B2C5F;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.services .text-muted{
+
+    max-width:650px;
+
+    margin:auto;
+
+    margin-bottom:50px;
+
+}
+
+.service-card{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    background:#fff;
+
+    transition:.4s;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.service-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#0B2C5F;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:2.5rem;
+
+    margin-bottom:25px;
+
+    transition:.3s;
+
+}
+
+.service-card:hover .service-icon{
+
+    background:#D4AF37;
+
+    color:#000;
+
+}
+
+.service-card h4{
+
+    color:#0B2C5F;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.service-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}

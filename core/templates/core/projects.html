@@ -1,0 +1,110 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Our Projects | Timetells Africa Holdings Ltd{% endblock %}
+
+{% block content %}
+
+<!-- Hero -->
+
+<section class="projects-hero">
+
+    <div class="container">
+
+        <h1 data-aos="fade-up">Our Projects</h1>
+
+        <p data-aos="fade-up" data-aos-delay="200">
+
+            A showcase of some of our completed work and business achievements.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Projects -->
+
+<section class="projects-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            {% for project in projects %}
+
+            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+
+                <div class="card project-page-card">
+
+                    {% if project.image %}
+
+                        <img src="{{ project.image.url }}"
+                             alt="{{ project.title }}">
+
+                    {% else %}
+
+                        <div class="project-placeholder">
+
+                            Project Image Coming Soon
+
+                        </div>
+
+                    {% endif %}
+
+                    <div class="card-body">
+
+                        <h3>{{ project.title }}</h3>
+
+                        <p>{{ project.description }}</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            {% empty %}
+
+            <div class="col-12">
+
+                <div class="alert alert-info text-center">
+
+                    No projects have been added yet.
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta-section">
+
+    <div class="container text-center">
+
+        <h2>Have a Project in Mind?</h2>
+
+        <p>
+
+            Let us help you bring your ideas to life with our professional team.
+
+        </p>
+
+        <a href="{% url 'quote' %}" class="btn btn-warning btn-lg">
+
+            Request a Quote
+
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}
