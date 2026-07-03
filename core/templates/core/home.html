@@ -1,4 +1,5 @@
 {% extends 'core/base.html' %}
+{% load static %}
 
 {% block title %}
 Home | Timetells Africa Holdings Ltd
@@ -8,33 +9,60 @@ Home | Timetells Africa Holdings Ltd
 
 <section class="hero">
 
-    <div class="hero-overlay"></div>
-
     <div class="container">
 
         <div class="row align-items-center hero-row">
 
             <div class="col-lg-7">
 
-                <span class="hero-company">
+            <div class="hero-brand">
 
-                    TIMETELLS AFRICA HOLDINGS LTD
+    <img src="{% static 'core/images/logo.png' %}"
+         alt="Timetells Africa Holdings Ltd"
+         class="hero-logo">
 
-                </span>
+    <div class="hero-brand-text">
 
-                <h1>
+        <h1 class="hero-title">
 
-                    Where Time Grows Value
+            <span class="time">TIME</span><span class="tells">TELLS</span>
 
-                </h1>
+        </h1>
 
-                <p>
+        <div class="hero-company-row">
 
-                    Building Africa's future through excellence in Fabrication &
-                    Engineering, Logistics & Transport, Airbnb Management,
-                    Property & Real Estate, and Strategic Investments.
+            <span class="line"></span>
 
-                </p>
+            <h2>AFRICA HOLDINGS LTD</h2>
+
+            <span class="line"></span>
+
+        </div>
+
+        <div class="hero-tagline-row">
+
+            <span class="line small"></span>
+
+            <p>Where Time Grows Value.</p>
+
+            <span class="line small"></span>
+
+        </div>
+
+    </div>
+
+</div>
+
+<p class="hero-description">
+
+    Delivering innovative, reliable and sustainable solutions in
+    Fabrication & Engineering, Logistics & Transport,
+    Hospitality & Stays, Property Development and Strategic Investments
+    across Africa.
+
+</p>
+
+
 
                 <div class="hero-buttons">
 
