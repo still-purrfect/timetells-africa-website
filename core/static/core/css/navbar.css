@@ -87,17 +87,3 @@
     color:#0B2C5F !important;
 
 }
-
-/* Mobile Menu */
-
-.navbar-toggler{
-    border:none;
-}
-
-.navbar-toggler:focus{
-    box-shadow:none;
-}
-
-.navbar-collapse{
-    margin-top:15px;
-}

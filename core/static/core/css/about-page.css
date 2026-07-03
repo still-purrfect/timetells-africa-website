@@ -1,48 +1,62 @@
-/* ==========================================
-   ABOUT PAGE
-========================================== */
+.about-placeholder{
 
-.about-hero{
+    height:450px;
 
-    background:#0B2C5F;
+    background:#e9ecef;
 
-    color:#fff;
+    border-radius:10px;
 
-    padding:90px 0;
+    display:flex;
 
-    text-align:center;
+    justify-content:center;
+
+    align-items:center;
+
+    color:#666;
+
+    font-size:1.5rem;
+
+    font-weight:600;
 
 }
 
-.about-section{
+.mission-card{
 
-    padding:80px 0;
+    background:white;
+
+    padding:35px;
+
+    border-radius:10px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    height:100%;
 
 }
 
-.about-section h2{
+.mission-card h3{
 
     color:#0B2C5F;
 
-    margin-bottom:25px;
+    margin-bottom:20px;
 
 }
 
 .value-card{
 
-    background:#fff;
+    background:white;
 
     padding:30px;
 
-    border-radius:12px;
-
     text-align:center;
 
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    border-radius:10px;
 
-    height:100%;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 
     transition:.3s;
+
+    height:100%;
 
 }
 
@@ -52,12 +66,10 @@
 
 }
 
-.value-card i{
+.value-card h4{
 
-    font-size:45px;
+    color:#0B2C5F;
 
-    color:#D4AF37;
-
-    margin-bottom:20px;
+    margin-bottom:15px;
 
 }

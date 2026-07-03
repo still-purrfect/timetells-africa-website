@@ -1,26 +1,86 @@
-.contact-hero{
-    background:#0B2C5F;
-    color:white;
-    padding:90px 0;
-    text-align:center;
+.contact-item{
+
+    padding:15px 0;
+
+    font-size:1.05rem;
+
 }
 
-.contact-section{
-    padding:80px 0;
+.contact-item i{
+
+    color:#D4AF37;
+
+    margin-right:10px;
+
+    font-size:1.2rem;
+
 }
+
+.form-control{
+
+    padding:14px;
+
+    border-radius:6px;
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+/* ===================================
+   CONTACT PAGE
+=================================== */
 
 .contact-card{
-    background:white;
-    border-radius:15px;
+
+    background:#fff;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+    margin-bottom:15px;
+
+    border-left:4px solid #D4AF37;
+
+}
+
+.contact-card h5{
+
+    color:#0B2C5F;
+
+    font-weight:700;
+
+}
+
+.contact-form-card{
+
+    background:#fff;
+
     padding:30px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    border-radius:14px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
 }
 
-.contact-card i{
-    color:#D4AF37;
-    font-size:30px;
-}
+.contact-form-card input,
+.contact-form-card textarea,
+.contact-form-card select{
 
-.contact-info{
-    margin-bottom:25px;
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
 }

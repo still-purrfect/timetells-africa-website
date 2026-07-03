@@ -1,39 +1,288 @@
-/* ==========================================
-   SERVICES PAGE
-========================================== */
 
-.services-hero {
-    background: #0B2C5F;
+/*==================================
+PAGE BANNER
+==================================*/
+
+.page-banner{
+
+    position: relative;
+
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-image:
+        linear-gradient(rgba(8,25,45,.65), rgba(8,25,45,.65)),
+        url("/static/core/images/business-banner.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
     color: #fff;
-    padding: 90px 0;
+
+}
+
+.banner-content{
+
+    position:relative;
+
+    z-index:2;
+     
     text-align: center;
+
 }
 
-.services-section {
-    padding: 80px 0;
+.section-tag{
+
+    color:#D4AF37;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    font-size:.85rem;
+
 }
 
-.service-page-card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 35px;
-    box-shadow: 0 5px 20px rgba(0,0,0,.08);
-    height: 100%;
-    transition: .3s;
-    text-align: center;
+.page-banner h1{
+
+    font-size:3.3rem;
+
+    font-weight:700;
+
+    margin:20px 0;
+
 }
 
-.service-page-card:hover {
-    transform: translateY(-10px);
+.page-banner p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#ddd;
+
+    font-size:1.1rem;
+
 }
 
-.service-page-card i {
-    font-size: 55px;
-    color: #D4AF37;
-    margin-bottom: 20px;
+/*==================================
+INTRO
+==================================*/
+
+.division-intro{
+
+    background:#fff;
+
 }
 
-.service-page-card h3 {
-    color: #0B2C5F;
-    margin-bottom: 15px;
+.section-title{
+
+    color:#08192D;
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
+}
+
+.gold-line{
+
+    width:90px;
+
+    height:4px;
+
+    background:#D4AF37;
+
+    margin:20px auto 30px;
+
+    border-radius:20px;
+
+}
+
+.section-description{
+
+    max-width:760px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/*==================================
+DIVISION SECTION
+==================================*/
+
+.division-section{
+
+    background:#f7f8fa;
+
+    padding-top:20px;
+}
+
+.division-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:40px 35px;
+
+    height:100%;
+
+    text-align:center;
+
+    transition:.45s ease;
+
+    border:1px solid #edf1f5;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.division-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:#D4AF37;
+
+    transform:scaleX(0);
+
+    transition:.4s;
+
+}
+
+.division-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
+
+}
+
+.division-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+.division-icon{
+
+    width:95px;
+
+    height:95px;
+
+    margin:0 auto 28px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#0B2C5F;
+
+    transition:.4s;
+
+}
+
+.division-icon i{
+
+    color:#D4AF37;
+
+    font-size:2.5rem;
+
+}
+
+.division-card:hover .division-icon{
+
+    background:#D4AF37;
+
+    transform:rotate(10deg);
+
+}
+
+.division-card:hover .division-icon i{
+
+    color:white;
+
+}
+
+.division-card h3{
+
+    font-size:1.45rem;
+
+    font-weight:700;
+
+    color:#0B2C5F;
+
+    margin-bottom:18px;
+
+}
+
+.division-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.division-link{
+
+    color:#D4AF37;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.division-link i{
+
+    transition:.35s;
+
+    margin-left:8px;
+
+}
+
+.division-link:hover{
+
+    color:#0B2C5F;
+
+}
+
+.division-link:hover i{
+
+    margin-left:15px;
+
 }

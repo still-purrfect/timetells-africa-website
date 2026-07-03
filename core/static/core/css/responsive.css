@@ -1,73 +1,148 @@
-@media(max-width:991px){
+/* ==========================================
+   TABLETS
+========================================== */
+
+@media (max-width:992px){
 
 .hero{
-
-padding:80px 0;
-
-text-align:center;
-
+    min-height:85vh;
+    text-align:center;
 }
 
 .hero h1{
-
-font-size:2.3rem;
-
+    font-size:3rem;
 }
 
-.hero-placeholder{
+.hero p{
+    font-size:1.05rem;
+    max-width:100%;
+}
 
-height:300px;
+.hero-buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
 
-margin-top:40px;
-
+.division-wrapper{
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
 }
 
 .navbar-brand{
+    font-size:1.35rem;
+}
 
-font-size:1.2rem;
+.page-banner{
+    padding:70px 0;
+}
 
+.about-placeholder{
+    height:350px;
+}
+
+.quote-card{
+    padding:30px;
+}
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.hero{
+    min-height:75vh;
+}
+
+.hero h1{
+    font-size:2.2rem;
+    line-height:1.3;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+.hero-buttons .btn{
+    width:100%;
+}
+
+.division-wrapper{
+    grid-template-columns:1fr;
+}
+
+.division-item{
+    margin-bottom:20px;
+}
+
+.page-banner h1{
+    font-size:2rem;
+}
+
+.about-placeholder{
+    height:250px;
+}
+
+.quote-card{
+    padding:25px;
 }
 
 .footer{
+    text-align:center;
+}
 
-text-align:center;
+.social-icons{
+    justify-content:center;
+    display:flex;
+    flex-wrap:wrap;
+}
 
+.navbar .btn-gold{
+    margin:20px 0 0;
+    width:100%;
 }
 
 }
 
-@media(max-width:768px){
+/* ==========================================
+   SMALL PHONES
+========================================== */
+
+@media (max-width:576px){
 
 .hero h1{
+    font-size:1.8rem;
+}
 
-font-size:2rem;
+.hero-tag{
+    font-size:.75rem;
+}
 
+.page-banner{
+    padding:60px 0;
+}
+
+.page-banner h1{
+    font-size:1.7rem;
+}
+
+.container{
+    padding-left:20px;
+    padding-right:20px;
 }
 
 .btn{
-
-width:100%;
-
-margin-bottom:15px;
+    padding:12px 22px;
+}
 
 }
 
-.service-card{
-
-margin-bottom:20px;
-
-}
-
-.project-card{
-
-margin-bottom:25px;
-
-}
-
-.cta h2{
-
-font-size:2rem;
-
-}
-
+html {
+    scroll-behavior: smooth;
 }

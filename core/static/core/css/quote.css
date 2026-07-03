@@ -1,0 +1,44 @@
+/* ===================================
+   QUOTE PAGE
+=================================== */
+
+.quote-section{
+    background:#f8f9fa;
+    padding:80px 0;
+}
+
+.quote-card{
+    background:#fff;
+    padding:45px;
+    border-radius:10px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.quote-card h2{
+    color:#0B2C5F;
+    margin-bottom:30px;
+    font-weight:700;
+}
+
+.quote-card label{
+    color:#0B2C5F;
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.quote-card .form-control,
+.quote-card .form-select{
+    padding:14px;
+    border-radius:6px;
+    border:1px solid #ddd;
+    margin-bottom:20px;
+}
+
+.quote-card textarea{
+    resize:none;
+}
+
+.quote-card button{
+    width:100%;
+    padding:15px;
+}

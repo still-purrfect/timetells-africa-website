@@ -1,81 +1,76 @@
-/* ==========================================
-   FOOTER
-========================================== */
-
 .footer{
-    background:#081F45;
-    color:#ffffff;
+
+    background:#08192d;
+
+    color:white;
+
     padding:70px 0 20px;
+
 }
 
 .footer h3,
 .footer h5{
-    font-family:'Poppins', sans-serif;
+
+    color:#D4AF37;
+
     margin-bottom:20px;
+
 }
 
-.footer p{
-    color:#d6d6d6;
+.footer p,
+.footer li{
+
+    color:#ddd;
+
     line-height:1.8;
+
 }
 
 .footer ul{
+
     list-style:none;
+
     padding:0;
+
 }
 
 .footer ul li{
+
     margin-bottom:10px;
+
 }
 
 .footer ul li a{
+
+    color:#ddd;
+
     text-decoration:none;
-    color:#d6d6d6;
-    transition:0.3s;
+
 }
 
 .footer ul li a:hover{
+
     color:#D4AF37;
-}
 
-.footer-contact p{
-    margin-bottom:12px;
 }
-
-.footer hr{
-    border-color:rgba(255,255,255,0.2);
-    margin:40px 0 20px;
-}
-
-.footer-bottom{
-    text-align:center;
-    color:#d6d6d6;
-    font-size:0.9rem;
-}
-
-/* ==========================================
-   SOCIAL ICONS
-========================================== */
 
 .social-icons a{
 
     display:inline-flex;
 
-    align-items:center;
+    width:42px;
+
+    height:42px;
 
     justify-content:center;
 
-    width:45px;
+    align-items:center;
 
-    height:45px;
+    background:#D4AF37;
+
+    color:#0B2C5F;
 
     border-radius:50%;
-
-    background:rgba(255,255,255,.08);
-
-    color:#fff;
-
-    text-decoration:none;
 
     margin-right:10px;
 
@@ -85,8 +80,22 @@
 
 .social-icons a:hover{
 
-    background:#D4AF37;
+    transform:translateY(-4px);
 
-    color:#000;
+}
+
+.footer hr{
+
+    border-color:rgba(255,255,255,.15);
+
+    margin:40px 0 20px;
+
+}
+
+.footer-bottom{
+
+    text-align:center;
+
+    color:#bbb;
 
 }

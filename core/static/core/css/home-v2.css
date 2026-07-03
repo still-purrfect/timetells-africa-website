@@ -1,0 +1,172 @@
+/* ===================================
+   HERO
+=================================== */
+
+.hero{
+
+    position:relative;
+
+    background:url("../images/hero.jpg") center center/cover no-repeat;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(5,18,38,.40);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.hero-tag{
+
+    color:#d4af37;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    font-size:.85rem;
+
+}
+
+.hero h1{
+
+    color:white;
+
+    font-size:3.2rem;
+
+    line-height:1.15;
+
+    font-weight:700;
+
+    margin:20px 0;
+
+    max-width:650px;
+
+}
+
+.hero p{
+
+    color:#f2f2f2;
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+    max-width:560px;
+
+}
+
+.hero-buttons{
+
+    margin-top:45px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn-gold{
+
+    background:#D4AF37;
+
+    color:#0B2C5F !important;
+
+    padding:15px 34px;
+
+    font-weight:700;
+
+    border-radius:6px;
+
+}
+
+.btn-gold:hover{
+
+    background:#c59d27;
+
+    color:#0B2C5F !important;
+
+
+}
+
+/* ===========================
+   FLOATING DIVISIONS
+=========================== */
+
+.floating-divisions{
+
+    margin-top:-70px;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.division-wrapper{
+
+    background:#0a1930;
+
+    border-radius:8px;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    padding:35px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.3);
+
+}
+
+.division-item{
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.division-item i{
+
+    color:#c9a44c;
+
+    font-size:2.4rem;
+
+    margin-bottom:15px;
+
+}
+
+.division-item h5{
+
+    margin:0;
+
+    font-weight:600;
+
+}
+
+.division-item:hover{
+
+    transform:translateY(-8px);
+
+    transition:.35s;
+
+}

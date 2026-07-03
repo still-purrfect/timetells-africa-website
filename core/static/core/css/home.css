@@ -1,0 +1,417 @@
+/*====================================================
+TIMETELLS AFRICA HOMEPAGE
+====================================================*/
+
+:root{
+
+    --primary:#0B2C5F;
+    --gold:#D4AF37;
+    --dark:#07111F;
+    --light:#F8F9FA;
+    --text:#555;
+
+}
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+
+
+/*====================================================
+BUTTONS
+====================================================*/
+
+.btn-gold{
+
+    background:var(--gold);
+
+    color:#111;
+
+    padding:16px 38px;
+
+    border-radius:4px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-gold:hover{
+
+    transform:translateY(-4px);
+
+    background:#e6c14f;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+/*====================================================
+BUSINESS STRIP
+====================================================*/
+
+.business-strip{
+
+    margin-top:-80px;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.business-wrapper{
+
+    background:white;
+
+    border-radius:14px;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+    overflow:hidden;
+
+}
+
+.business-card{
+
+    padding:35px 28px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.business-card:hover{
+
+    background:#fafafa;
+
+}
+
+.business-card i{
+
+    font-size:2.4rem;
+
+    color:var(--gold);
+
+    margin-bottom:18px;
+
+}
+
+.business-card h4{
+
+    color:var(--primary);
+
+    font-size:1.15rem;
+
+    margin-bottom:15px;
+
+}
+
+.business-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    font-size:.95rem;
+
+}
+
+/*====================================================
+SECTION TAG
+====================================================*/
+
+.section-tag{
+
+    display:inline-block;
+
+    color:var(--gold);
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    margin-bottom:18px;
+
+}
+
+section{
+
+    padding:110px 0;
+
+}
+
+section h2{
+
+    color:var(--primary);
+
+    font-size:2.6rem;
+
+    margin-bottom:25px;
+
+}
+
+/*====================================================
+ABOUT
+====================================================*/
+
+.about-image-placeholder{
+
+    height:520px;
+
+    border-radius:12px;
+
+    background:#d9d9d9;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:1.5rem;
+
+    color:#777;
+
+}
+
+/*====================================================
+MISSION
+====================================================*/
+
+.mission-section{
+
+    background:#f8f9fa;
+
+}
+
+.mission-card{
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:12px;
+
+    height:100%;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+/*====================================================
+VALUES
+====================================================*/
+
+.value-card{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.3s;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    height:100%;
+
+}
+
+.value-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.value-card i{
+
+    font-size:2.2rem;
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+
+}
+
+/*====================================================
+SERVICES
+====================================================*/
+
+.service-card{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    height:100%;
+
+    transition:.3s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.service-card i{
+
+    font-size:2.5rem;
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+
+}
+
+/*====================================================
+PROJECTS
+====================================================*/
+
+.project-card{
+
+    background:white;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.project-card img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+}
+
+.project-placeholder{
+
+    height:260px;
+
+    background:#dcdcdc;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.project-content{
+
+    padding:30px;
+
+}
+
+/*====================================================
+STATS
+====================================================*/
+
+.company-stats{
+
+    background:var(--primary);
+
+}
+
+.stat-card{
+
+    padding:30px;
+
+}
+
+.stat-card h2{
+
+    color:var(--gold);
+
+    font-size:3rem;
+
+}
+
+.stat-card p{
+
+    color:white;
+
+}
+
+/*====================================================
+CTA
+====================================================*/
+
+.homepage-cta{
+
+    background:#f7f7f7;
+
+}
+
+.cta-box{
+
+    background:var(--primary);
+
+    color:white;
+
+    border-radius:18px;
+
+    padding:80px 50px;
+
+    text-align:center;
+
+}
+
+.cta-box h2{
+
+    color:white;
+
+}
+
+.cta-box p{
+
+    max-width:700px;
+
+    margin:25px auto 35px;
+
+    color:#e5e5e5;
+
+}
